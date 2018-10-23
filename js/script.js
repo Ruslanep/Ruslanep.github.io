@@ -66,7 +66,7 @@ $('.intro__left-contacts--item').click(function(){
 
     $('.intro__left-contacts--item').removeClass('display');
     
-});
+    });
 
 
 
