@@ -1,7 +1,7 @@
 
 body {
     min-width: 320px;
-    overflow-x: hidden;
+    
     margin: 0;
     padding: 0;
     font-size: 18px;
@@ -45,8 +45,8 @@ ul {
     top: 0;
     margin-left: 0;
     width: 100%;
-    height: 10vh;
-    min-height: 85px;
+    height: 8vh;
+    /* min-height: 85px; */
     border-top: solid 3px #e61313;
     border-bottom: solid 2px #eaeaea;
     
@@ -77,8 +77,8 @@ ul {
     background-color: #3661A2;
     
     width: 5px;
-    height: 10vh;
-    min-height: 85px;
+    height: 8vh;
+    /* min-height: 85px; */
     margin-right: 8px; 
     cursor: pointer;
 }
@@ -110,7 +110,7 @@ ul {
 }
 
 .page-header__small {
-    font-size: 16px;
+    font-size: 14px;
 
 }
 
@@ -130,8 +130,8 @@ ul {
 }
 .page-header__nav-item {
     
-    min-height: 45px;
-    line-height: 85px;
+    
+    line-height: 6vh;
     font-size: 18px;
     color: #333333;
     max-width: 110px;
@@ -185,14 +185,14 @@ ul {
 @media(max-width:768px){
     .page-header {
         
-        height: 5vh;
+        height: 8vh;
     }
     .page-header__logo {
         
         
         width: 5px;
-        height: 5vh;
-        min-height: 85px;
+        height: 8vh;
+        
         margin-right: 8px; 
         cursor: pointer;
     }
@@ -211,8 +211,6 @@ ul {
     .page-header__name {
         
     }
-
-
     .page-header__nav-wrapper {
         display: none;
         
@@ -240,7 +238,7 @@ ul {
 }
 .intro-wrapper {  
     margin: 0 auto; 
-    height: 80vh;
+    height: 84vh;
     
     max-width: 1200px; 
     position: relative;
@@ -263,21 +261,27 @@ ul {
 .intro__left{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
-
-    height: 70vh;
-    flex-basis: 23%;
+    min-height: 70vh;
+    height: 74vh;
+    flex-basis: 28%;
+    
     
     background-color: #fff;
     box-shadow: 0 0 5px 0px rgb(219, 214, 214);
  
 }
 
+.intro__left-title {
+    text-align: center;
+}
+
 .intro__left-avatar {
-    margin-top: 20px;
-    min-width: 160px;
-    min-height: 160px;
+    
+    width: 160px;
+    height: 160px;
+   
     border-radius: 50%;
     background: url("../img/photo.jpg") no-repeat 30% 30%;
     background-size: cover;
@@ -285,62 +289,57 @@ ul {
     
 }
 
-.intro__left-title {
-    margin-top: 20px;
+
+
+.intro__left-content-wrapper {
+    text-align: center;
+    width: 90%;
 }
 
 .intro__left-content {
-    width: 85%;
+    
     text-indent: 5%;
     text-align: center;
+    line-height: 24px;
     font-size: 18px;
 }
 
 .button-slide-down { 
-   
-    margin: 0 10px;
     
 
-    width: 220px;
+    
+    width: 170px;
     text-align: center;
-    padding: 2px;
+    
+    padding: 1px;
     color: #fff;
     background-color: #3661A2;
     border-radius: 3px;
     box-shadow: 0 0 3px 0px #888686;
     cursor: pointer; 
     transition: box-shadow 0.2s;
-}
-.intro__left-contacts {
-    margin-right: 15px;
-    width: 220px;
-    text-align: center;
-    padding: 2px;
-    color: #fff;
-    background-color: #3661A2;
-    
-    border-radius: 3px;
-    cursor: pointer; 
-    transition: box-shadow 0.2s;
-    display: none;
-}
 
-@media(max-width:768px){ 
-    .button-slide-down { 
-        margin: 0 0;
-        margin-bottom: 15px;
-    }
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    position: relative;
 }
-
+.button-slide-down span{ 
+    position: absolute;
+    font-size: 22px;
+    font-weight: bold;
+    left: 14%;
+    top: 39%;   
+}
 
 .button-slide-down:hover { 
-    box-shadow: 0 0 8px 1px #888686;
+    box-shadow: 0 0 11px 2px #3a3939 inset;
 }
+.intro__left-contacts {
+    
+    
+    width: 170px;
 
-
-.intro__left-contacts--item {
-    margin-right: 15px;
-    width: 220px;
     text-align: center;
     padding: 2px;
     color: #fff;
@@ -350,10 +349,24 @@ ul {
     cursor: pointer; 
     transition: box-shadow 0.2s;
     display: none;
+}
+
+.intro__left-contacts--item {
+    display: none;
+    width: 170px;
+    text-align: center;
+    padding: 2px;
+    color: #fff;
+    background-color: #3661A2;
+    line-height: 20px;
+    border-radius: 3px;
+    cursor: pointer; 
+    transition: box-shadow 0.2s;
+    
     position: absolute;
    
 
-    margin-top: 45px;
+    margin-top: 34px;
 }
 .display {
     display: block;
@@ -367,14 +380,12 @@ ul {
 }
 
 
-.button-slide-down:hover { 
-   
-}
+
 .intro__right {
-    min-height: 55vh;
-    height: 70vh;
     
-    flex-basis: 76%;
+    height: 74vh;
+    
+    flex-basis: 71%;
     background-color: #fff;
     box-shadow: 0 0 5px 0px rgb(219, 214, 214);
     position: relative;
@@ -389,8 +400,8 @@ ul {
     text-align: left;
     padding-top: 10px; 
     padding-left: 30px;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 20px;
+    line-height: 28px;
     
     
 }
@@ -413,9 +424,9 @@ ul {
 }
 
 .intro__right2 {
-    max-height:70vh;
+    height: 74vh;
     
-    flex-basis: 76%;
+    flex-basis: 71%;
     background-color: #fff;
     box-shadow: 0 0 5px 0px rgb(219, 214, 214);
 
@@ -431,10 +442,10 @@ ul {
 }
 .intro__right2-content {
     text-align: left;
-    padding-top: 20px; 
+    padding-top: 40px; 
     padding-left: 40px;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 20px;
+    line-height: 26px;
     position: relative;
 }
 
@@ -442,7 +453,7 @@ ul {
     content: "";
     position: absolute;
     left: 22px;
-    margin-top: 5px;
+    margin-top: 10px;
     
     
     width: 6px;
@@ -457,39 +468,58 @@ ul {
 }
 @media(max-width:768px){
     .intro-wrapper { 
-        height: 80vh;
+        height: 84vh;
         width: 100%;       
     }
     .page-main__intro {
-        margin-top:10px;
+        margin-top:0;
         flex-direction: column;  
     }
 
-    .page-main__intro {
-
-       
     
-    }
     .intro__left {
-        height: 15vh;    
+        height: 12vh; 
+        padding: 0 80px;  
+        
+        display: flex;
         flex-direction: row;
 
-        display: flex;
-        justify-content: space-around;
-
-        flex-basis: 100%;
-
+        flex-basis: 0;
+        min-height: 12vh;
+        box-shadow: none;
     }
+
+   
 
     .intro__left-avatar {
         margin-top: 0;
         margin-left: 20px;
         margin-right: 50px;
-        min-width: 120px;
-        min-height: 120px;
+        width:80px;
+        height: 80px;
+        
         
     }
-    
+    .button-slide-down span{ 
+        position: unset;
+        font-size: 18px;
+        font-weight: normal;
+         
+    }
+
+    .button-slide-down { 
+        background-color: transparent;
+        color: #000;
+        margin-bottom: 6px;
+        height: 30px;
+        border-radius: 2px;
+        width: 172px;
+        box-shadow: 0 0 3px 0px #888686;
+
+        
+    }.button-slide-down:hover {
+        box-shadow: none;
+    }
     .intro__left-title, 
     .intro__left-content {
         display: none;
@@ -497,6 +527,16 @@ ul {
 
     .intro__left-contacts {
         display: block;
+        background-color: transparent;
+        color: #000;
+        box-shadow: 0 0 3px 0px #888686;
+        
+    }
+    .intro__left-contacts:hover {
+       box-shadow: none;
+    }
+    .intro__left-contacts--item {
+
     }
 
     .intro__left-wrapper {
@@ -507,22 +547,32 @@ ul {
         }
 
     .intro__right {
-        margin-top: 10px;
+        margin-top: 0px;
 
-        height: 62vh;
+        height: 72vh;
 
         background-color: #fff;
-        box-shadow: 0 0 5px 0px rgb(219, 214, 214);
+        box-shadow: none;
+        border-top: 2px solid #eaeaea;
 
     }
+
+    .intro__right-content {
+        text-align: center;
+        margin: 0 auto;
+        width: 80%;
+        
+        
+    }
+
     .intro__right-education {
         display: none;
     }
     
     .intro__right2 {
-        margin-top: 10px;
+        margin-top: 0px;
 
-        height: 56vh;
+        height: 72vh;
 
         background-color: #fff;
         box-shadow: 0 0 5px 0px rgb(219, 214, 214);
@@ -539,16 +589,16 @@ ul {
         text-align: left;
         padding-top: 5px; 
         padding-left: 30px;
-        font-size: 17px;
-        line-height: 22px;
+        font-size: 18px;
+        line-height: 24px;
         position: relative;
     }
     .intro__right2-content p::before {
-        left: 22px;
+        left: 12px;
         margin-top: 8px;
 
-        width: 5px;
-        height: 5px; 
+        width: 8px;
+        height: 8px; 
     }
 }
 /************************************/
@@ -558,7 +608,7 @@ ul {
 .page-main__info {
     
     width: 100%;
-    height: 8vh;
+    height: 6vh;
     background: #fff;
     border-top: solid 2px #eaeaea;
 }
@@ -578,8 +628,8 @@ ul {
     align-items: center;
     justify-content: space-around;
 
-    padding: 20px 0;
-    font-size: 20px;
+    padding: 10px 0;
+    font-size: 16px;
     font-weight: normal;
    
 }
@@ -592,13 +642,13 @@ ul {
     .page-main__info {
         
         width: 100%;
-        height:8vh;
+        height: 6vh;
         background: #fff;
-        border-top: solid 2px #eaeaea;
+        border-top: none;
     }
     .page-main__info2 {
         
-        height: 4vh;
+        height: 2vh;
         width: 100%;
         
         background: #3661A2;
@@ -647,8 +697,12 @@ ul {
 .site-item__image {
     position: relative;
     flex-basis: 30%;
-    min-width: 400px;
-    min-height: 400px;
+    width: 300px;
+    height: 300px;
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 300px;
+    max-height: 300px;
     margin: 20px;
     
     
@@ -662,9 +716,11 @@ ul {
     left: 0;
     width: 93%;
     height: 60%;
-    position: absolute;
+    
     margin-top: 10px;
-    margin-left: 13px;
+    margin-left: 10px;
+    
+    position: absolute;
     
     background: url("../img/port-logo-pc.png") no-repeat 50% 50%;
     background-size:  cover;
@@ -674,10 +730,12 @@ ul {
     top: 0;
     left: 0;
     width: 93%;
-    height:57%;
+    height:60%;
+    
+    margin-top: 10px;
+    margin-left: 10px;
+
     position: absolute;
-    margin-top: 20px;
-    margin-left: 13px;
     
     background: url("../img/port-logo-pc2.png") no-repeat 50% 50%;
     background-size:  cover;
@@ -767,5 +825,4 @@ ul {
 
 
 
-  
   
