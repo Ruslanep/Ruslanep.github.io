@@ -322,18 +322,18 @@ ul {
 }
 
 .button-slide-down { 
+    display: none;
     top: 75%;
     margin-left: 90%;
     
-    
     color: #fff;
     background-color: #3661A2;
-    border-radius: 1px;
     box-shadow: 0 0 3px 0px #888686;
     cursor: pointer; 
     transition: box-shadow 0.2s;
     padding: 20px;
     
+    border: none;
     border-radius: 50%;
     position: fixed;
     z-index: 999;
@@ -362,6 +362,7 @@ ul {
     margin: 0 auto;
     width:18px;
     height: 13px;
+    transform: rotate(180deg);
     background: url("../img/angle.png") no-repeat; 
 }
 
