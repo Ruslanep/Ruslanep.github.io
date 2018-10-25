@@ -1,30 +1,27 @@
 (function(){
-    'use strict';
 
-    var btnScrollDown = document.querySelector('.button-slide-down');
-  
-    function scrollDown() {
-      var windowCoords = document.documentElement.clientHeight;
-      
-      (function scroll() {
-        if (window.pageYOffset < windowCoords-1) {
-          window.scrollBy(0, 15);
-          setTimeout(scroll, 0);
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+
+        if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+          document.querySelector(".button-slide-down").style.display = "block";
+        
+        } else {
+            document.querySelector(".button-slide-down").style.display = "none";
         }
-        if (window.pageYOffset > windowCoords) {
-          window.scrollTo(0, windowCoords);
-        }
-      })();
     }
-  
-    btnScrollDown.addEventListener('click', scrollDown);
-
-
-   
-
     
-})();
+    var topScroller = document.querySelector(".button-slide-down");
+    topScroller.addEventListener("click", topFunction);
 
+    function topFunction() {
+        if(!document.documentElement.scrollTop == 0 || !document.body.scrollTop == 0) {
+             window.scrollBy(0, -50);
+             setTimeout(topFunction, 0);
+            }
 
+    }
 
+  })();
 
