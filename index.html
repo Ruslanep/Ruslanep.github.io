@@ -12,7 +12,7 @@
     <title>Портфолио веб-мастера</title>
 </head>
 <body id="page-top"> 
-    
+
   <section class="scroller">
     <button  class="button-slide-down">
       <div class="button-slide-down-block"></div>
@@ -21,20 +21,23 @@
 
   <header class="page-header">
     <div class="page-header__wrapper">
-            
+         
         <div class="page-header__logo-wrapper"> 
-            <div class="logo1"></div>
-            <div class="logo2"></div>
-        </div>
         
+                <a href="#"> <div class="logo1"></div></a>
+                <a href="#"> <div class="logo2"></div></a>
+        
+        </div>
+         
         <div class="page-header__nav-wrapper">
-            <div class="page-header__nav-item active main page-scroll">
-                 Портфолио
-                </div>
-            <div class="page-header__nav-item about-me page-scroll">
+            <a id="main" class="page-header__nav-item  active" href="#portfolio-anch">
+              Портфолио
+            </a>
+  
+            <a id="about" class="page-header__nav-item " href="#about-anch">
                  О себе 
-                </div>
-            <div class="page-header__nav-item contacts page-scroll">
+            </a>
+            <div class="page-header__nav-item contacts">
                  Контакты
                 <div class="contacts-block">ruslanep@gmail.com / +7(999)-163-21-47</div>
             </div>
@@ -45,7 +48,7 @@
   </header>
 
   
-        <div class="page-main__wrapper">
+        <div class="page-main__wrapper" id="portfolio-anch">
         <section class="page-main__portfolio">
             <div class="portfolio-list">
                 <a name="bot"></a>
@@ -101,27 +104,28 @@
                 </div>
                 <div class="page-main__portfolio-item ">
                     <div class="site-item__image">
-                            <div class="site-item__image-pc2" ></div>
+                           
                             
                     </div>
                     <div class="site-item__text-wrapper">
-                        <h2 class="site-item__title">Веб-студия "Creatives"</h2>
+                        <h2 class="site-item__title">Веб-студия "Piroll"</h2>
                         <p class="site-item__desc">
                             Lorem ipsum dolor sit, amet consectetur
                              adipisicing elit. Dolorum error quae ipsam vero minima quaerat 
                              inventore, ducimus natus, cupiditate omnis culpa! Odio, 
                              tenetur qui libero voluptatem ipsa exercitationem ea sint!
                         </p>
-                        <a href="creative/index.html" class="site-item__button" >Перейти к проекту</a>
+                        <a href="" class="site-item__button" >Перейти к проекту</a>
                     </div>
                 </div>   
             </div>
         </section>
+        <div id="about-anch"></div>
     </div>
 
 
 
-<main class="page-main">
+<main class="page-main" >
             
     <div class="intro-wrapper">
         <h1 class="visually-hidden">Епишин Руслан - верстальщик который работает за еду!</h1>
