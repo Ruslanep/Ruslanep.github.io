@@ -271,6 +271,21 @@ ul {
     background-size:  cover;
 }
 
+.site-item__image-pc3 {
+    top: 0;
+    left: 0;
+    width: 93%;
+    height:60%;
+    
+    margin-top: 10px;
+    margin-left: 10px;
+
+    position: absolute;
+    
+    background: url("../img/port-logo-pc3.png") no-repeat 50% 50%;
+    background-size:  cover;
+}
+
 .site-item__text-wrapper {
     
     flex-basis: 50%;
